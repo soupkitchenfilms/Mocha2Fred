@@ -24,6 +24,9 @@ Save to file writes the same text (.json).
 Register from a Mocha init.py:   import fred_mocha_exporters; fred_mocha_exporters.register()
 (init.py beside this file does that: point MOCHA_INIT_SCRIPT at this folder.)
 """
+
+__version__ = "0.1.0"   # Mocha2Fred release; a bug report quotes it (Mocha prints it at start-up)
+
 from mocha.exporters import AbstractShapeDataExporter, AbstractTrackingDataExporter
 from PySide6.QtCore import QByteArray
 

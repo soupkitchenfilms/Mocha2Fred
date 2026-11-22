@@ -18,7 +18,7 @@ Send your Mocha Pro tracks and roto shapes to Fred as editable nodes.
 
 ## Install
 
-On the GitHub repository page, choose **Code > Download ZIP** and extract it to a folder you can keep. If you use Git, run `git clone https://github.com/soupkitchenfilms/Mocha2Fred.git`. Keep the four Python files together in the extracted or cloned repository's **mocha_fred** folder.
+Download **Mocha2Fred-<version>.zip** from the [latest release](https://github.com/soupkitchenfilms/Mocha2Fred/releases/latest) and extract it to a folder you can keep (not your Downloads folder, which gets cleaned). If you use Git you can instead run `git clone https://github.com/soupkitchenfilms/Mocha2Fred.git`. Keep the four Python files together in the extracted or cloned repository's **mocha_fred** folder.
 
 Choose one of these startup methods. Quit Mocha before making changes. After setup, start Mocha and open a project so the exporters can register.
 
@@ -90,11 +90,17 @@ If FRED_MOCHA_VERSION has any text, the exporters use that setting first and ski
 
 ## Troubleshooting
 
+When the exporters load, Mocha's Python console shows `Mocha2Fred 0.1.0: Fred exporters registered` (with your version). Quote that version in any bug report.
+
 - **The Fred entries are missing.** Restart Mocha and open a project. Check the startup path and make sure the four Python files are still together.
 - **Check the Mocha log from the Help menu.** Search for **Fred exporters not registered** and read the message after it. To check Python inside Mocha, open **View > Python Script Editor**, run `print("Python is running")`, and look in its **Output** pane for the result or errors. If a custom PYTHONPATH points to another Python installation, try launching Mocha with PYTHONPATH unset.
 - **Mocha reports a missing source exporter.** Folder-based Roto uses Mocha's **Nuke Roto [Transform & Shape] - 6.2+ (\*.nk)**. Baked Roto uses **Shake RotoShape (\*.ssf)**. CornerPin can use **Nuke Corner Pin (\*.nk)** for its tracking options. Check that the relevant built-in exporter is available.
 - **Roto reports mixed inversion.** Export the inverted layers in their own pass.
 - **The Fred node looks wrong.** Check your target Fred version. Connect a plate with the same resolution and frame numbers as the Mocha project.
+
+## Updating
+
+Download the newest zip from [Releases](https://github.com/soupkitchenfilms/Mocha2Fred/releases), quit Mocha, and replace the contents of your Mocha2Fred folder with the new files. Your startup setup stays as it is.
 
 ## Uninstall
 
