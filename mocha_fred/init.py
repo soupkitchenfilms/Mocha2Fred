@@ -14,6 +14,6 @@ try:
 
     import fred_mocha_exporters
     fred_mocha_exporters.register()
-    print("Mocha2Fred %s: Fred exporters registered" % fred_mocha_exporters.__version__)
+    print("Mocha2Fred %s: Fred exporters registered" % getattr(fred_mocha_exporters, "__version__", "?"))
 except Exception as exc:   # never stop Mocha starting over an exporter
     print("Fred exporters not registered: %s" % exc)
