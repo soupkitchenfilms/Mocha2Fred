@@ -100,6 +100,14 @@ If FRED_MOCHA_VERSION has any text, the exporters use that setting first and ski
 
 Quit Mocha. If you edited its startup script, remove the two lines you added. If you set MOCHA_INIT_SCRIPT, restore its previous value or remove it from **User variables** on Windows, run `launchctl unsetenv MOCHA_INIT_SCRIPT` on macOS, or remove it from your shell profile or launcher on Linux. Remove any Fred version settings you added. You can now delete the download and restart Mocha.
 
+## Tested on
+
+[![Tests](https://github.com/OWNER/REPO/actions/workflows/tests.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/tests.yml)
+
+Once enabled on GitHub, the automated Python suite runs on Windows, macOS, and Linux on every push and pull request.
+
+These exporters are not yet confirmed inside Mocha on any OS. Reports are welcome via GitHub Issues. Include your OS and the Mocha Pro and Fred versions you used.
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
