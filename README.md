@@ -18,7 +18,7 @@ Send your Mocha Pro tracks and roto shapes to Fred as editable nodes.
 
 ## Install
 
-On the GitHub repository page, choose **Code > Download ZIP** and extract it to a folder you can keep. If you use Git, copy the clone URL from **Code** and run `git clone <URL>` with that URL. Keep the four Python files together in the extracted or cloned repository's **mocha_fred** folder.
+On the GitHub repository page, choose **Code > Download ZIP** and extract it to a folder you can keep. If you use Git, run `git clone https://github.com/soupkitchenfilms/Mocha2Fred.git`. Keep the four Python files together in the extracted or cloned repository's **mocha_fred** folder.
 
 Choose one of these startup methods. Quit Mocha before making changes. After setup, start Mocha and open a project so the exporters can register.
 
@@ -102,7 +102,7 @@ Quit Mocha. If you edited its startup script, remove the two lines you added. If
 
 ## Tested on
 
-[![Tests](https://github.com/OWNER/REPO/actions/workflows/tests.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/tests.yml)
+[![Tests](https://github.com/soupkitchenfilms/Mocha2Fred/actions/workflows/tests.yml/badge.svg)](https://github.com/soupkitchenfilms/Mocha2Fred/actions/workflows/tests.yml)
 
 Once enabled on GitHub, the automated Python suite runs on Windows, macOS, and Linux on every push and pull request.
 
