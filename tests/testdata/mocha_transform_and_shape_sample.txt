@@ -1,0 +1,27 @@
+# Synthetic Transform & Shape stream, using the records read by Fred's Nest importer.
+Roto {
+ inputs 0
+ curves {{{v x3f99999a} {f 0} {n
+  {layer Root
+   {layer "Tracked layer"
+    {t 25 30 0 {{1001 0 0 0 0 0 258} {1002 8 0 0 0 0 258}} 2 0 0 0 15 1.5 0.8 1 0.2 0.1 0 0 0 0 1
+       1 0 0 0
+       0 1 0 0
+       0 0 1 0
+       {{1001 0 0 0 0 0 258} {1002 0.001 0 0 0 0 258}} 0 0 1}
+    {curvegroup "Local shape" 512 bezier {
+     {cc {f 8192} {px {1001 1003}
+      {-2 0} {{{x41200000 0 0 0 0 x43810000} {14 0 0 0 0 258}} 30} {2 0}
+      {0 0} {30 30} {0 0}
+      {0 0} {30 10} {0 0}
+     }}
+     {cc {f 8192} {px 1001
+      {0 0} {0 3} {0 0}
+      {0 0} {0 0} {0 0}
+      {0 0} {0 0} {0 0}
+     }}
+    } {tx 1001 10 30} {a opc 0.75}}
+   }
+  }
+ }}}
+}
